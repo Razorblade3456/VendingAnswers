@@ -2,7 +2,7 @@ const yearDisplay = document.querySelector<HTMLSpanElement>('#year');
 const supportForm = document.querySelector<HTMLFormElement>('#support-form');
 const placementForm = document.querySelector<HTMLFormElement>('#placement-form');
 
-const PLACEHOLDER_SUPPORT_EMAIL = '';
+const PLACEHOLDER_SUPPORT_EMAIL = 'johnny.leyva182@gmail.com';
 // TODO: Drop in your real support inbox before going live.
 
 interface FormState {
