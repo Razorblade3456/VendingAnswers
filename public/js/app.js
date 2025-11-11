@@ -2,7 +2,7 @@
 const yearDisplay = document.querySelector('#year');
 const supportForm = document.querySelector('#support-form');
 const placementForm = document.querySelector('#placement-form');
-const PLACEHOLDER_SUPPORT_EMAIL = '';
+const PLACEHOLDER_SUPPORT_EMAIL = 'johnny.leyva182@gmail.com';
 const isValidEmail = (value) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
 };
