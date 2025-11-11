@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pandora's Box Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <h1 class="hero__title">Pandora's Box</h1>
+        <p class="hero__subtitle">After-hours support for your vending universe.</p>
+        <a class="hero__cta" href="#contact">Need help? Contact us</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="info" aria-labelledby="info-title">
+        <div class="info__content">
+          <h2 id="info-title">We're here for your vending machines</h2>
+          <p>
+            Whether your dispenser door is jammed, a product sold out, or you just want to
+            refresh the playlists that keep your customers energized, the Pandora's Box
+            night shift is ready.
+          </p>
+          <ul class="info__list">
+            <li>24/7 machine monitoring and diagnostics</li>
+            <li>Rapid on-site technician dispatch</li>
+            <li>Inventory optimization and restock alerts</li>
+            <li>Custom audio & lighting ambiance programming</li>
+          </ul>
+        </div>
+        <div class="info__card">
+          <h3>Emergency Hotline</h3>
+          <p class="info__card-number">1-800-PANDORA</p>
+          <p class="info__card-text">
+            Call for immediate assistance. Our technicians will start troubleshooting in
+            minutes.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Tell us what's going on</h2>
+        <p class="contact__intro">
+          Send us a message with the details of your vending machine issue. We'll respond
+          before the next song drops.
+        </p>
+        <form id="support-form" class="contact__form" novalidate>
+          <div class="form__row">
+            <label class="form__field">
+              <span>Name</span>
+              <input
+                type="text"
+                id="support-name"
+                name="name"
+                autocomplete="name"
+                required
+              />
+              <small class="form__error" data-error-for="support-name"></small>
+            </label>
+            <label class="form__field">
+              <span>Email</span>
+              <input
+                type="email"
+                id="support-email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+              <small class="form__error" data-error-for="support-email"></small>
+            </label>
+          </div>
+          <label class="form__field">
+            <span>Machine Location</span>
+            <input
+              type="text"
+              id="support-location"
+              name="location"
+              autocomplete="street-address"
+            />
+          </label>
+          <label class="form__field">
+            <span>What's happening?</span>
+            <textarea id="support-message" name="message" rows="6" required></textarea>
+            <small class="form__error" data-error-for="support-message"></small>
+          </label>
+          <button type="submit" class="form__submit">Send message</button>
+          <p class="form__note">
+            Replace the placeholder email in <code>src/app.ts</code> with your preferred
+            support inbox before deploying.
+          </p>
+          <p class="form__success" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section id="placement" class="placement" aria-labelledby="placement-title">
+        <div class="placement__content">
+          <h2 id="placement-title">Bring Pandora's Box to your venue</h2>
+          <p>
+            Turn late-night foot traffic into a neon-lit experience. Share your vision and
+            we'll design the perfect vending lineup for your crowd.
+          </p>
+          <ul class="placement__list">
+            <li>Curated product assortments and revenue sharing</li>
+            <li>Full maintenance, restocking, and performance analytics</li>
+            <li>Lighting and audio synced to your space's nighttime energy</li>
+          </ul>
+        </div>
+        <form id="placement-form" class="contact__form" novalidate>
+          <div class="form__row">
+            <label class="form__field">
+              <span>Name</span>
+              <input
+                type="text"
+                id="placement-name"
+                name="name"
+                autocomplete="name"
+                required
+              />
+              <small class="form__error" data-error-for="placement-name"></small>
+            </label>
+            <label class="form__field">
+              <span>Business Email</span>
+              <input
+                type="email"
+                id="placement-email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+              <small class="form__error" data-error-for="placement-email"></small>
+            </label>
+          </div>
+          <label class="form__field">
+            <span>Venue or Company</span>
+            <input
+              type="text"
+              id="placement-location"
+              name="location"
+              autocomplete="organization"
+            />
+          </label>
+          <label class="form__field">
+            <span>Tell us about your space</span>
+            <textarea id="placement-message" name="message" rows="6" required></textarea>
+            <small class="form__error" data-error-for="placement-message"></small>
+          </label>
+          <button type="submit" class="form__submit">Start the conversation</button>
+          <p class="form__note">
+            Replace the placeholder email in <code>src/app.ts</code> with your preferred
+            support inbox before deploying.
+          </p>
+          <p class="form__success" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Pandora's Box Vending Support. All rights reserved.</p>
+      <p>Designed for the after-hours glow.</p>
+    </footer>
+
+    <script type="module" src="public/js/app.js"></script>
+  </body>
+</html>
