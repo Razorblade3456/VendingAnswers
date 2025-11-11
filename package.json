@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch --preserveWatchOutput"
+    "dev": "node scripts/dev-server.js"
   },
   "devDependencies": {
     "typescript": "^5.4.0"
