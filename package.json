@@ -1,0 +1,12 @@
+{
+  "name": "pandoras-box",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch --preserveWatchOutput"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
